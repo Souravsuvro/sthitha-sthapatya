@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>3D Architectural Visualization | Sthitha Sthapatya</title>
+  <meta name="description" content="Photorealistic 3D renders, interactive walkthroughs, and VR tours to help you experience your project before it is built.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="#main" class="skip">Skip to main content</a>
+  <header>
+    <div class="wrap">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">স্থ</div>
+        <div><span>Sthitha Sthapatya</span><small class="logo-bn">স্থিত স্থাপত্য</small></div>
+      </a>
+      <nav id="nav" role="navigation" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <div class="drop">
+          <a href="services.html">Services ▾</a>
+          <div class="drop-menu">
+            <a href="architectural-consultancy.html">Architectural Consultancy</a>
+            <a href="interior-design.html">Luxury Interior Design</a>
+            <a href="construction-management.html">Construction Management</a>
+          </div>
+        </div>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="nrb-services.html">NRB Services</a>
+        <a href="3d-visualization.html" class="act">3D Visualization</a>
+        <a href="furniture.html">Furniture</a>
+        <a href="blog.html">Blog</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html" class="nav-cta">Contact</a>
+      </nav>
+      <button class="burger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+  <main id="main">
+    <div class="pg-hero" style="background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=1600&q=75&fm=webp');background-size:cover">
+      <div class="breadcrumb"><a href="index.html">Home</a><span>›</span><span style="color:#fff">3D Visualization</span></div>
+      <h1>3D Architectural Visualization</h1>
+      <p>See your project before it's built — photorealistic renders, interactive walkthroughs, and immersive VR tours.</p>
+    </div>
+    <section class="sec">
+      <div class="cnt">
+        <div class="sec-head reveal"><span class="sec-tag">Interactive Demo</span><h2>Explore in 3D</h2><p>Drag to rotate the architectural model. This is the kind of interactive experience we deliver for every project.</p></div>
+        <div class="viz-showcase" id="vizShowcase">
+          <div class="viz-badge"><div class="vb">🎯 Interactive 3D</div><div class="vb">Drag to Rotate</div></div>
+          <div class="scene-3d" id="scene3d">
+            <div class="house-3d" id="house3d">
+              <div class="face wall wall-front" style="background:linear-gradient(180deg,rgba(26,122,109,.22),rgba(26,122,109,.1));border:2px solid rgba(26,122,109,.35)">
+                <div style="position:absolute;bottom:10px;left:50%;transform:translateX(-50%);width:30px;height:50px;background:rgba(184,134,11,.3);border:2px solid rgba(184,134,11,.5);border-radius:3px 3px 0 0"></div>
+                <div style="position:absolute;top:20px;left:20px;width:25px;height:25px;background:rgba(200,220,240,.2);border:2px solid rgba(200,220,240,.4);border-radius:2px"></div>
+                <div style="position:absolute;top:20px;right:20px;width:25px;height:25px;background:rgba(200,220,240,.2);border:2px solid rgba(200,220,240,.4);border-radius:2px"></div>
+              </div>
+              <div class="face wall wall-back"></div>
+              <div class="face wall wall-left"></div>
+              <div class="face wall wall-right" style="background:linear-gradient(180deg,rgba(26,122,109,.2),rgba(26,122,109,.08))">
+                <div style="position:absolute;top:20px;left:30px;width:50px;height:30px;background:rgba(200,220,240,.15);border:2px solid rgba(200,220,240,.3);border-radius:2px"></div>
+              </div>
+              <div class="face floor-3d"></div>
+              <div class="face roof-side roof-left"></div>
+              <div class="face roof-side roof-right"></div>
+            </div>
+          </div>
+          <div class="viz-controls">
+            <button class="viz-ctrl-btn act" data-mode="rotate">Auto Rotate</button>
+            <button class="viz-ctrl-btn" data-mode="drag">Drag Mode</button>
+            <button class="viz-ctrl-btn" data-mode="explode">Explode View</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec cv">
+      <div class="cnt">
+        <div class="sec-head reveal"><span class="sec-tag">Before &amp; After</span><h2>From Blueprint to Photorealism</h2><p>See how our 3D visualization process transforms architectural plans into lifelike imagery.</p></div>
+        <div class="ba-slider reveal" id="baSlider">
+          <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1200&q=80&fm=webp" alt="Architectural blueprint" width="1200" height="675" loading="lazy" decoding="async">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80&fm=webp" alt="Photorealistic 3D render" width="1200" height="675" loading="lazy" decoding="async" class="ba-after">
+          <div class="ba-handle" id="baHandle"></div>
+          <span class="ba-label before">Blueprint</span>
+          <span class="ba-label after">3D Render</span>
+        </div>
+      </div>
+    </section>
+    <section class="sec cv" style="background:var(--c-pri-l)">
+      <div class="cnt">
+        <div class="sec-head reveal"><span class="sec-tag">Services</span><h2>Visualization Service Tiers</h2></div>
+        <div class="g4">
+          <div class="price-card reveal"><h3>Exterior Renders</h3><div class="price-amt">৳25K</div><div class="price-per">Per view</div><ul class="price-list"><li>Photorealistic exterior CGIs</li><li>Day &amp; night lighting options</li><li>Landscaping visualization</li><li>4K resolution output</li><li>2 revision rounds</li></ul><a href="contact.html" class="btn btn-pri" style="width:100%">Order Now</a></div>
+          <div class="price-card featured reveal"><h3>Interior Renders</h3><div class="price-amt">৳35K</div><div class="price-per">Per room</div><ul class="price-list"><li>Photorealistic interior CGIs</li><li>Material &amp; furniture styling</li><li>Natural &amp; artificial lighting</li><li>Multiple camera angles</li><li>3 revision rounds</li></ul><a href="contact.html" class="btn btn-pri" style="width:100%">Order Now</a></div>
+          <div class="price-card reveal"><h3>Animated Walkthrough</h3><div class="price-amt">৳1.5L</div><div class="price-per">Per project</div><ul class="price-list"><li>60-90 second cinematic tour</li><li>Camera path through all rooms</li><li>Background music &amp; narration</li><li>Full HD or 4K delivery</li><li>5 revision rounds</li></ul><a href="contact.html" class="btn btn-pri" style="width:100%">Order Now</a></div>
+          <div class="price-card reveal"><h3>VR Tour</h3><div class="price-amt">৳2.5L</div><div class="price-per">Per project</div><ul class="price-list"><li>360° interactive walkthrough</li><li>Oculus/HTC Vive compatible</li><li>Material switching in real-time</li><li>Web-based VR viewer</li><li>Unlimited revisions</li></ul><a href="contact.html" class="btn btn-pri" style="width:100%">Order Now</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="cnt">
+      <div class="foot-grid">
+        <div>
+          <div class="foot-brand">Sthitha Sthapatya</div>
+          <p class="foot-desc">স্থিত স্থাপত্য — "Enduring Architecture." A premier Bangladeshi architecture, luxury interior design, and construction management firm serving homeowners and NRBs worldwide since 2002.</p>
+          <div class="foot-social">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">f</a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">ig</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">yt</a>
+            <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" aria-label="Pinterest">pi</a>
+          </div>
+        </div>
+        <div><h4>Services</h4><ul>
+          <li><a href="architectural-consultancy.html">Architectural Consultancy</a></li>
+          <li><a href="interior-design.html">Interior Design</a></li>
+          <li><a href="construction-management.html">Construction Management</a></li>
+          <li><a href="3d-visualization.html">3D Visualization</a></li>
+          <li><a href="furniture.html">Furniture Design</a></li>
+          <li><a href="nrb-services.html">NRB Services</a></li>
+        </ul></div>
+        <div><h4>Company</h4><ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        </ul></div>
+        <div><h4>Contact</h4><ul>
+          <li>📍 House 42, Road 12, Banani, Dhaka 1213</li>
+          <li>📞 +880 1700-000000</li>
+          <li>✉️ hello@sthithasthapatya.com</li>
+        </ul></div>
+      </div>
+      <div class="foot-creator">
+        <p class="foot-creator-label">Website created by</p>
+        <p class="foot-creator-name">Sourav Sarker Suvra</p>
+        <p class="foot-creator-bio">Legendary Web App Developer &amp; AI Research Expert, 10x Growth Specialist — based in Sylhet, working with clients worldwide to grow businesses 10x and ship super fast.</p>
+        <div class="foot-creator-links">
+          <a href="https://www.linkedin.com/in/souravsarkersuvra" target="_blank" rel="noopener noreferrer" aria-label="Sourav on LinkedIn">LinkedIn</a>
+          <a href="https://github.com/souravsarkersuvra" target="_blank" rel="noopener noreferrer" aria-label="Sourav on GitHub">GitHub</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>&copy; 2026 Sthitha Sthapatya. All rights reserved.</span>
+        <div><a href="privacy-policy.html">Privacy</a> · <a href="faq.html">FAQ</a></div>
+      </div>
+    </div>
+  </footer>
+  <script defer src="main.js"></script>
+</body>
+</html>
