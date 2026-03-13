@@ -1,0 +1,32 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://sthithasthapatya.com/sitemap.xml
+
+# Block common non-content files
+Disallow: /_vercel/
+Disallow: /.well-known/
+Disallow: /*.tmp$
+Disallow: /*.log$
+
+# Allow search engines to crawl all content
+Allow: /$
+Allow: /about.html
+Allow: /services.html
+Allow: /portfolio.html
+Allow: /blog.html
+Allow: /contact.html
+Allow: /faq.html
+Allow: /privacy-policy.html
+Allow: /careers.html
+Allow: /nrb-services.html
+Allow: /3d-visualization.html
+Allow: /furniture.html
+Allow: /architectural-consultancy.html
+Allow: /interior-design.html
+Allow: /construction-management.html
+Allow: /blog-*.html
+
+# Crawl delay (optional, be respectful)
+Crawl-delay: 1

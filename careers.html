@@ -10,32 +10,113 @@
 </head>
 <body>
   <a href="#main" class="skip">Skip to main content</a>
-  <header>
-    <div class="wrap">
-      <a href="index.html" class="logo">
+  <!-- Improved header navigation with better UX and accessibility -->
+  <header class="main-header">
+    <div class="header-wrap">
+      <a href="index.html" class="logo" aria-label="Sthitha Sthapatya - Home">
         <div class="logo-icon">স্থ</div>
-        <div><span>Sthitha Sthapatya</span><small class="logo-bn">স্থিত স্থাপত্য</small></div>
-      </a>
-      <nav id="nav" role="navigation" aria-label="Main">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <div class="drop">
-          <a href="services.html">Services ▾</a>
-          <div class="drop-menu">
-            <a href="architectural-consultancy.html">Architectural Consultancy</a>
-            <a href="interior-design.html">Luxury Interior Design</a>
-            <a href="construction-management.html">Construction Management</a>
-          </div>
+        <div>
+          <span>Sthitha Sthapatya</span>
+          <small class="logo-bn">স্থিত স্থাপত্য</small>
         </div>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="nrb-services.html">NRB Services</a>
-        <a href="3d-visualization.html">3D Visualization</a>
-        <a href="furniture.html">Furniture</a>
-        <a href="blog.html">Blog</a>
-        <a href="faq.html">FAQ</a>
-        <a href="contact.html" class="nav-cta">Contact</a>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="main-nav" role="navigation" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+              Services <span class="dropdown-arrow" aria-hidden="true">▼</span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li role="menuitem"><a href="services.html" class="dropdown-link">Services Overview</a></li>
+              <li role="menuitem"><a href="architectural-consultancy.html" class="dropdown-link">Architectural Consultancy</a></li>
+              <li role="menuitem"><a href="interior-design.html" class="dropdown-link">Luxury Interior Design</a></li>
+              <li role="menuitem"><a href="construction-management.html" class="dropdown-link">Construction Management</a></li>
+              <li role="menuitem"><a href="3d-visualization.html" class="dropdown-link">3D Visualization</a></li>
+              <li role="menuitem"><a href="furniture.html" class="dropdown-link">Furniture Design</a></li>
+            </ul>
+          </li>
+          <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+          <li><a href="nrb-services.html" class="nav-link">NRB Services</a></li>
+          <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+          <li class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+              Resources <span class="dropdown-arrow" aria-hidden="true">▼</span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li role="menuitem"><a href="blog.html" class="dropdown-link">Blog</a></li>
+              <li role="menuitem"><a href="fresher-architects.html" class="dropdown-link">Fresher Programs</a></li>
+              <li role="menuitem"><a href="faq.html" class="dropdown-link">FAQ</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html" class="nav-link nav-cta">Contact</a></li>
+        </ul>
       </nav>
-      <button class="burger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+
+      <!-- Mobile Navigation Toggle -->
+      <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav" role="navigation" aria-label="Mobile navigation">
+      <div class="mobile-nav-header">
+        <div class="mobile-logo">
+          <div class="logo-icon">স্থ</div>
+          <span>Sthitha Sthapatya</span>
+        </div>
+        <button class="mobile-nav-close" aria-label="Close navigation menu">×</button>
+      </div>
+      
+      <ul class="mobile-nav-list">
+        <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+        <li><a href="about.html" class="mobile-nav-link">About</a></li>
+        <li class="mobile-nav-dropdown">
+          <button class="mobile-dropdown-toggle" aria-expanded="false">
+            Services <span class="mobile-dropdown-arrow">▼</span>
+          </button>
+          <ul class="mobile-dropdown-menu">
+            <li><a href="services.html" class="mobile-dropdown-link">Services Overview</a></li>
+            <li><a href="architectural-consultancy.html" class="mobile-dropdown-link">Architectural Consultancy</a></li>
+            <li><a href="interior-design.html" class="mobile-dropdown-link">Luxury Interior Design</a></li>
+            <li><a href="construction-management.html" class="mobile-dropdown-link">Construction Management</a></li>
+            <li><a href="3d-visualization.html" class="mobile-dropdown-link">3D Visualization</a></li>
+            <li><a href="furniture.html" class="mobile-dropdown-link">Furniture Design</a></li>
+          </ul>
+        </li>
+        <li><a href="portfolio.html" class="mobile-nav-link">Portfolio</a></li>
+        <li><a href="nrb-services.html" class="mobile-nav-link">NRB Services</a></li>
+        <li><a href="testimonials.html" class="mobile-nav-link">Testimonials</a></li>
+        <li class="mobile-nav-dropdown">
+          <button class="mobile-dropdown-toggle" aria-expanded="false">
+            Resources <span class="mobile-dropdown-arrow">▼</span>
+          </button>
+          <ul class="mobile-dropdown-menu">
+            <li><a href="blog.html" class="mobile-dropdown-link">Blog</a></li>
+            <li><a href="fresher-architects.html" class="mobile-dropdown-link">Fresher Programs</a></li>
+            <li><a href="faq.html" class="mobile-dropdown-link">FAQ</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html" class="mobile-nav-link mobile-nav-cta">Contact</a></li>
+      </ul>
+      
+      <!-- Mobile Contact Info -->
+      <div class="mobile-contact-info">
+        <div class="mobile-contact-item">
+          <span class="mobile-contact-icon">📞</span>
+          <a href="tel:+8801700000000">+880 1700-000000</a>
+        </div>
+        <div class="mobile-contact-item">
+          <span class="mobile-contact-icon">✉️</span>
+          <a href="mailto:hello@sthithasthapatya.com">hello@sthithasthapatya.com</a>
+        </div>
+      </div>
     </div>
   </header>
   <main id="main">

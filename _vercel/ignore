@@ -1,0 +1,26 @@
+# Ignore temporary files and development artifacts
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# Ignore development logs
+logs/
+*.log
+
+# Ignore node_modules (if any)
+node_modules/
+
+# Ignore build artifacts (if any)
+dist/
+build/
+
+# Ignore large video files that shouldn't be deployed
+*.mp4
+*.avi
+*.mov
+*.webm
+
+# Ignore the test file
+home-test.html
+sthitha-sthapatya-final.html
